@@ -15,3 +15,17 @@ img {
 	font-weight: bold;
 	color: blue;
 }
+.menu {
+	margin-bottom: 20px;
+}
+
+.menu li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.menu a {
+	font-size: 18px;
+	text-decoration: none;
+	color: red;
+}
