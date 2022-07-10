@@ -1,34 +1,5 @@
-*, html, body {
+*, html, body{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-.container {
-	width: 1200px;
-	margin: 20px auto;
-	font-family: Arial, Helvetica, sans-serif;
-}
-img {
-	height: 200px;
-}
-.bold {
-	font-weight: bold;
-	color: blue;
-}
-.menu {
-	margin-bottom: 20px;
-}
-
-.menu li {
-	list-style-type: none;
-	display: inline-block;
-}
-
-.menu a {
-	font-size: 18px;
-	text-decoration: none;
-	color: red;
-}
-h1{
-	margin-bottom: 15px;
 }
