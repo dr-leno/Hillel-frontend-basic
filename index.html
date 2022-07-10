@@ -8,6 +8,113 @@
 	<title>Selector specificity</title>
 </head>
 <body>
-
+	<div class="container">
+	<h1>Специфічність селекторів</h1>
+	<p>Виділяють 4 категорії, які визначають специфічність селектора</p>
+	<ul>
+		<li><span>Інлайнові стилі (мають найбільшу вагу, важливіше тільки !important)</span> Приклад - tagname style="color: pink;"tagname </li>
+		<li><span>За ID</span> Приклад - #menu</li>
+		<li><span> Класи, псевдокласи, селектори атрибутів</span> Приклад - .class, :hover, [href]</li>
+		<li><span>Елементи, псевдоелементи</span> Приклад - p, :before</li>
+	</ul>
+	<table>
+		<tr>
+			<th>Селектор</th>
+			<th>Специфічність</th>
+		</tr>
+		<tr>
+			<td>*</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>tagName</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>.class</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>#id</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td>tagName.class</td>
+			<td>11</td>
+		</tr>
+		<tr>
+			<td>.class1.class2</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>tagName.class1.class2</td>
+			<td>21</td>
+		</tr>
+		<tr>
+			<td>tagName#id</td>
+			<td>101</td>
+		</tr>
+		<tr>
+			<td>#id1 tagName#id2</td>
+			<td>201</td>
+		</tr>
+		<tr>
+			<td>inline style</td>
+			<td>1000</td>
+		</tr>
+	</table>
+	<ul>
+		<li>div - обрані всі div на сторінці</li>
+		<li>.wrapper - всі елементи з класом wrapper</li>
+		<li>#id обирає елементи з певним id</li>
+		<li>div.wrapper - обирає тільки div з класом wrapper</li>
+		<li>div .inner - обирає елементи з класом inner, які вкладені в div</li>
+		<li>ul a - обирає ті а, які вкладені в ul</li>
+		<li>.wrapper.green - обирає тільки елементи з класом wrapper і класом green</li>
+		<li>div .inner a - обирає елементи а, які є в середині класу inner, який знаходиться всередині div</li>
+		<li>#id .inner.green - обирає всередині елементу з певним id елемент з класами inner та green одночасно</li>
+		<li>Якщо написані однакові за вагою селектори - виграє той, який написаний нижче</li>
+	</ul>
+	<h2>Приклади</h2>
+			<!-- інлайнові стилі -->
+	<p style="color: red;"> 
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis autem voluptatibus eum? Excepturi quae illo voluptas quod magni illum aperiam ea, velit animi facere accusantium expedita rerum reiciendis minus.
+	</p>
+	<!-- селектор за тегом -->
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad laborum, eos delectus neque labore doloremque enim, esse ratione explicabo rerum non corporis! Quidem ad tempore officia, mollitia cum at sunt!
+	</p>
+		<!-- селектор за id -->
+	<p id="green-text">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem, ducimus quo consectetur cumque corporis. Deserunt aut tenetur adipisci? In unde numquam aut iure nesciunt officiis quasi sit exercitationem earum?
+	</p>
+	<!-- селектор за класом  -->
+	<p class="colorful-text">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusantium eum laborum reprehenderit numquam perspiciatis dolore totam consequatur mollitia vel suscipit nemo odit ut distinctio?
+	</p>
+	<!--селектор на 2 класи -->
+	<p class="colorful-text green">
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis alias iusto delectus magnam natus quam eum velit molestiae officia, adipisci sint, blanditiis eligendi placeat! Voluptatem non minima id error.
+	</p>
+	<!-- як вкладеність впливає на колір (не просто р, а р, який знаходиться в div з класом)-->
+	<div class="wrapper">
+	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic libero, quos eaque dolore asperiores earum ratione omnis itaque necessitatibus similique doloribus quibusdam reprehenderit adipisci vitae quod, nobis fuga. Excepturi, officiis.
+	</p>
+	<!-- звернення до orange вкладених в wrapper-->
+	<p class="orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia obcaecati neque dignissimos totam, expedita iure ratione provident eum, voluptatum inventore molestiae voluptatibus quas nesciunt natus sit, maiores reiciendis facere nisi!
+	</p>
+	</div>
+	<!-- звернення через id клас і елемент -->
+	<ul id="menu-first">
+		<li class="menu-item">
+			<a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem est</a>
+		</li>
+		<!-- звернення через id клас і клас -->
+		<li class="menu-item">
+			<a href="#" class="link">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem est</a>
+		</li>
+	</ul>
+	<!-- звернення через псевдоклас -->
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, labore nulla. Obcaecati recusandae sunt odit magnam exercitationem aliquid quia veniam libero fuga saepe, minus omnis excepturi aperiam quidem dicta tempora?</p>
+	</div>
 </body>
 </html>
