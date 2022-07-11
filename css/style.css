@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 *, html, body{
 	margin: 0;
 	padding: 0;
@@ -187,13 +188,11 @@ body{
 	text-align: center;
 }
 /* stay in contact section start */
-.stay-in-contact{
-	height: 212px;
-	margin: 100px 0;
-}
 .stay-in-contact-box{
 	width: 540px;
+	height: 212px;
 	padding: 35px 40px;
+	margin: 100px 0;
 	position: relative;
 }
 .stay-in-contact-title{
