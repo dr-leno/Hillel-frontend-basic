@@ -5,9 +5,63 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
-	<title>Document</title>
+	<title>Dropdown menu</title>
 </head>
 <body>
-	
+	<div class="container">
+		<nav class="menu">
+			<ul class="menu__list">
+				<li>
+					<a href="#" class="menu__link">Home</a>
+				</li>
+				<li>
+					<a href="#" class="menu__link">Products</a>
+					<!-- Menu inner -->
+					<ul class="menu-inner__list">
+						<li>
+							<a href="#" class="menu-inner__link">Product 1</a>
+							<ul class="sub-menu-inner__list">
+								<li>
+									<a href="#"class="sub-menu-inner__link">sub item 1</a>
+								</li>
+								<li>
+									<a href="#"class="sub-menu-inner__link">sub item 2</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="menu-inner__link">Product 2</a>
+							<!-- Sub-menu inner -->
+							<ul class="sub-menu-inner__list">
+								<li>
+									<a href="#"class="sub-menu-inner__link">sub item 1</a>
+								</li>
+								<li>
+									<a href="#"class="sub-menu-inner__link">sub item 2</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="menu-inner__link">Product 3</a>
+							<ul class="sub-menu-inner__list">
+								<li>
+									<a href="#"class="sub-menu-inner__link">sub item 1</a>
+								</li>
+								<li>
+									<a href="#"class="sub-menu-inner__link">sub item 2</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="menu__link">About</a>
+				</li>
+				<li>
+					<a href="#" class="menu__link">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </body>
 </html>

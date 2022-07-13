@@ -4,4 +4,85 @@
 	box-sizing: border-box;
 	list-style-type: none;
 	text-decoration: none;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 0;
+}
+.container{
+	width: 1110px;
+	margin: 0 auto;
+}
+.menu{
+	background-color: #000;
+	border-bottom: 7px solid #009eff;
+}
+/* first level line style */
+.menu__list>li{
+	display: inline-block;
+	padding: 40px;
+}
+.menu__list .menu__link{
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* hover for first line menu */
+.menu__list>li:hover{
+	background-color: #009eff;
+}
+/* position relative style */
+.menu__list>li, .menu-inner__list li, .menu-inner__list a{
+	position: relative;
+}
+/* drop-down part of the menu display block style  */
+.menu__list>li:hover .menu-inner__list,.menu-inner__list>li:hover .sub-menu-inner__list{
+	display: block;
+}
+/* inner menu style */
+.menu-inner__list{
+	display: none;
+	position: absolute;
+	top: 107px;
+	left: 0px;
+}
+.menu-inner__list li{
+	width: 150%;
+	padding: 40px 20px;
+	border: 2px solid #0084ef;
+	background-color: #009eff;
+	
+}
+/* inner menu + sub-inner menu link style */
+.menu-inner__list a{
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+}
+/* sub-inner menu style */
+.sub-menu-inner__list{
+	display: none;
+	position: absolute;
+	right: -190px;
+	top: -1px;
+}
+.sub-menu-inner__link{
+	text-transform: capitalize;
+}
+/* "+" after element for drop-down part indicating */
+.menu__list>li:nth-child(2) .menu__link::after{
+	content: '+';
+	color: #fff;
+	position: absolute;
+	top: 40px;
+   right: 20px;
+}
+.menu-inner__link::after{
+	content: '+';
+	color: #fff;
+	position: absolute;
+	right: -80px;
+	top: 0px;
 }
