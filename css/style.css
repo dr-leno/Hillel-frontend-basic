@@ -1,3 +1,28 @@
+@font-face {
+   font-family: 'GraphikLCGRegular';
+   src: url('../fonts/GraphikLCGRegular/GraphikLCGRegular.eot');
+   src: url('../fonts/GraphikLCGRegular/GraphikLCGRegular.eot') format('embedded-opentype'),
+         url('../fonts/GraphikLCGRegular/GraphikLCGRegular.woff2') format('woff2'),
+         url('../fonts/GraphikLCGRegular/GraphikLCGRegular.woff') format('woff'),
+         url('../fonts/GraphikLCGRegular/GraphikLCGRegular.ttf') format('truetype'),
+         url('../fonts/GraphikLCGRegular/GraphikLCGRegular.svg#GraphikLCGRegular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+   font-family: 'GraphikLCGSemibold';
+   src: url('fonts/GraphikLCGSemibold.eot');
+   src: url('fonts/GraphikLCGSemibold.eot') format('embedded-opentype'),
+         url('fonts/GraphikLCGSemibold.woff2') format('woff2'),
+         url('fonts/GraphikLCGSemibold.woff') format('woff'),
+         url('fonts/GraphikLCGSemibold.ttf') format('truetype'),
+         url('fonts/GraphikLCGSemibold.svg#GraphikLCGSemibold') format('svg');
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+}
+
 *, html, body{
 	padding: 0;
 	margin: 0;
