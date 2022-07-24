@@ -1,0 +1,213 @@
+/* For small laptops till 992px */
+@media screen and (max-width: 1200px){
+    .wrapper, .container {
+        max-width: 970px;
+    }
+    .header-btn-wrapper{
+        display: none;
+    }
+    .header-nav{
+        width: 100%;
+    }
+    .header__menu{
+        display: none;
+    }
+    .ham-menu{ 
+        display: inline-block;
+    } 
+    .from-code-to-delivery .container{
+        background: url('../images/from-code-to-delivery.png') 100% 20% no-repeat;
+        background-size: 50%;
+    }
+    .app-presentation img{
+        width: 55%;
+    }
+    .cards-wrapper{
+        justify-content: center;
+    }
+    .integration .btn {
+        width: 21%;
+    }
+}
+
+/* For tablets from 992px to 768px */
+@media screen and (max-width: 992px){
+    .wrapper, .container {
+        max-width: 750px;
+    }
+    .from-code-to-delivery .container{
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-wrapper{
+        width: 100%;
+    }
+    .logos-wrapper{
+        width: 80%;
+        margin: 70px auto 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .citation-photo{
+        height: 200px;
+    }
+    .integration img{
+        width: 70%;
+    }
+    .integration .btn {
+        width: 25%;
+    }
+    .footer-menu-wrap{
+        width: 75%;
+  }
+}
+
+/* For small screens from 320px to 768px */
+@media screen and (max-width: 767px){
+    .wrapper, .container {
+        max-width: none;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* responsive header styles  */
+    .header{
+        position: static;
+    }
+    .header-nav{
+        min-width: 300px;
+    }
+    .ham-menu, .ham-menu::before, .ham-menu::after { 
+        width: 30px; 
+        height: 7px;  
+    }
+    .title{
+        margin-bottom: 20px;
+        font-size: 50px;
+        line-height: 1em;
+    }
+    /* responsive section from code to delivery */
+    .from-code-to-delivery{
+        margin-top: 50px;
+    }
+    .section-btn-wrapper{
+        width: 85%;
+    }
+    /* responsive section companies */
+    .companies{
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+    .logos-wrapper img{
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    .section-title{
+        font-size: 35px;
+        line-height: 1em;
+    }
+    /* responsive section app presentation */
+    .app-presentation .container div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .app-presentation .text{
+        width: 100%;
+    }
+    .app-presentation img{
+        width: 300px;
+    }
+    .app-presentation .container .shorten-time, .app-presentation .container .ease-for-developers{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .control-lokalisation, .shorten-time, .translation{
+        margin-bottom: 50px;
+    }
+    /* responsive section what can lokalize */
+    .what-can-lokalize {
+        margin-top: 50px;
+        padding: 80px 0;
+    }
+    /* responsive section productivity tenfold */
+    .productivity-tenfold{
+        padding: 80px 0;
+    } 
+    .card {
+        width: 100%;
+        margin: 79px 0 0;
+    }
+    .team-cards-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-card{
+        width: 100%;
+    }
+    /* responsive section citation */
+    blockquote p {
+        font-size: 25px;
+        line-height: 1em;
+    }
+    figure img{
+        margin-bottom: 20px;
+    }
+    /* responsive section Ranking  */
+    .ranking .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .ranking-title-wrap img{
+        display: none;
+    }
+    .ranking-title{
+        margin: 0 0 20px;
+        font-size: 30px;
+        line-height: 1em;
+    }
+    .ranking-images-wrap{
+        width: 100%;
+        border: none;
+    }
+    /* responsive section integration */
+    .integration-title, .no-wait-title {
+        font-size: 40px;
+        line-height: 1em;
+    }
+    .integration .btn {
+        width: 190px;
+    }
+    .integration, .no-wait, .footer-top{
+        padding: 60px 0;
+    }
+   /* responsive footer */
+    .case-studies-wrap{
+        display: none;
+    }
+    .footer-menu-wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer-menu{
+        width: 45%;
+        margin-bottom: 15px;
+    }
+    .footer-bottom{
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-logo-wrap{
+    width: 100%;
+    }
+    .copyright{
+        padding: 15px 0 0;
+       align-self: center;
+    }
+}

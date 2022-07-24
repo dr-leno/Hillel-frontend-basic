@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/media.css">
 	<title>Lokalise</title>
 </head>
 
@@ -14,10 +15,11 @@
 	<!-- Header -->
 	<header class="header flex">
 		<div class="wrapper j-c-b">
-			<div class="a-i-c">
-				<a class="logo" href="#">
-					<img src="./images/logo.svg" alt="Lokalise logo header">
-				</a>
+			<div class="header-nav j-c-b a-i-c">
+				<div class="header-logo"><a class="logo" href="#">
+						<img src="./images/logo.svg" alt="Lokalise logo header">
+					</a>
+				</div>
 				<!-- header main menu -->
 				<nav class="header__menu">
 					<ul class="header__menu-list j-c-b a-i-c">
@@ -38,6 +40,7 @@
 						</li>
 					</ul>
 				</nav>
+				<span class="ham-menu"></span>
 			</div>
 			<div class="header-btn-wrapper j-c-b">
 				<a class="btn transparent t-a-c b" href="#">Log in</a>
@@ -213,17 +216,17 @@
 					<figcaption class="caption">Edward Cooper, Chief Mobile Officer</figcaption>
 					<a href="#"><img src="./images/revolut.svg" alt="Revolut logo"></a>
 				</figure>
-				<img src="./images/edward-cooper.jpg" alt="Edward Cooper">
+				<img class="citation-photo" src="./images/edward-cooper.jpg" alt="Edward Cooper">
 			</div>
 		</section>
 		<!-- Ranking section -->
 		<section class="ranking">
 			<div class="container j-c-b">
-				<div class="ranking-title-wrap a-i-c">
+				<div class="ranking-title-wrap  a-i-c">
 					<img src="./images/cake.svg" alt="Cake">
 					<h3 class="ranking-title b">The most-loved translation management software</h3>
 				</div>
-				<div class="ranking-images-wrap j-c-b">
+				<div class="ranking-images-wrap j-c-a">
 					<img src="./images/users-ranking.svg" alt="Users ranking 5 stars">
 					<img src="./images/capterra-ranking.svg" alt="Capterra highest ranking">
 				</div>
@@ -255,7 +258,8 @@
 				<div class="case-studies-wrap column">
 					<h4 class="case-studies-title b">Case Studies</h4>
 					<img src="./images/riding.jpg" alt="Men ride bikes">
-					<a href="#"><img class="case-studies-logo" src="./images/specialized.svg" alt="specialized logo"></a>
+					<a href="#"><img class="case-studies-logo" src="./images/specialized.svg"
+							alt="specialized logo"></a>
 					<p class="text">Riding towards global success with a 100% teammate enthusiasm</p>
 					<a class="text b link" href="">Read more</a>
 				</div>
@@ -380,4 +384,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>

@@ -37,11 +37,14 @@ body{
 
 /* General containers styles */
 .wrapper{
-      width: 1330px;
+      max-width: 1330px;
+      width: 100%;
       margin: 0 auto;
 }
 .container{
-      width: 1280px;
+      max-width: 1330px;
+      width: 100%;
+      padding: 0 25px;
       margin: 0 auto;
 }
 
@@ -105,11 +108,11 @@ a{
       background-color: #fff;
       border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
-.logo{
-      margin-right: 51px;
+.header-nav{
+      width: 55%;
 }
 .header__menu{
-      width: 550px;
+      width: 75%;
 }
 .header__menu-item-link{
       font-size: 15px;
@@ -118,9 +121,32 @@ a{
 .header-btn-wrapper{
       width: 19%;
 }
+/* Ham menu for smaller screens */
+.ham-menu{ 
+      display: none; 
+      position: relative; 
+      margin: 40px 0;
+}
+.ham-menu, .ham-menu::before, .ham-menu::after { 
+      width: 75px; 
+      height: 7px; 
+      border-radius: 2px; 
+      background-color: black; 
+}
+.ham-menu::before, .ham-menu::after { 
+      content: ""; 
+      display: block; 
+      position: absolute; 
+}
+.ham-menu::before { 
+      bottom: 120%;
+} 
+.ham-menu::after { 
+      top: 120%; 
+}
 /* transparent & orange buttons */
 .btn{
-      width: 120px;
+      width: 48%;
       font-size: 16px;
       line-height: 45px;
 }
@@ -138,8 +164,7 @@ a{
       padding: 35px 0;
 }
 .from-code-to-delivery .container{
-      background: url('../images/from-code-to-delivery.png') no-repeat;
-      background-position-x: right;
+      background: url('../images/from-code-to-delivery.png') 100% 0 no-repeat;
 }
 .title{
       margin-bottom: 51px;
@@ -147,19 +172,19 @@ a{
       line-height: 70px;
 }
 .text-wrapper{
-      width: 550px;
+      width: 43%;
 }
 .main-text{
       margin-bottom: 50px;
-      width: 470px;
+      width: 90%;
       font-size: 25px;
       line-height: 35px;
 }
 .section-btn-wrapper{
-      width: 330px;
+      width: 60%;
 }
 section .btn{
-      width: 160px;
+      width: 48%;
       line-height: 60px;
 }
 .section-btn-wrapper .btn{
@@ -259,7 +284,7 @@ p a{
       background: #C9E8F2;
 }
 .citation figure{
-      width: 70%;
+      width: 72%;
 }
 blockquote p{
       margin-bottom: 23px;
@@ -278,17 +303,20 @@ blockquote p::after {
       padding: 80px 0;
       background: #DABC98;
 }
+.ranking-title-wrap{
+      width: 77%;
+}
 .ranking-title{
       margin-left: 67px;
       font-size: 35px;
       line-height: 50px;
 }
 .ranking-images-wrap{
+      width: 38%;
       border-left: 1px solid #000;
 }
 .ranking-images-wrap img{
-      margin-left: 85px;
-      width: 140px;
+      width: 30%;
 }
 
 /* integration section style starts */
@@ -305,7 +333,7 @@ blockquote p::after {
       margin-bottom: 25px;
 }
 .integration .btn{
-      width: 193px;
+      width: 15%;
       margin-top: 32px;
       line-height: 60px;
 }
@@ -318,6 +346,7 @@ blockquote p::after {
       margin: 30px 0 54px;
 }
 .no-wait .btn{
+      width: 160px;
       background: #000;
       color: #fff;
 }
@@ -345,7 +374,7 @@ blockquote p::after {
       margin-top: 15px;
 }
 
-/* Footer style starts */
+/* Footer menu style starts */
 .footer-menu-wrap{
       width: 65%;
 }
