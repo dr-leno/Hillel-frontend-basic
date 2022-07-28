@@ -8,6 +8,7 @@
 body{
 	overflow: hidden;
 }
+/* Sky + change color animation */
 .sky{
 	width: 1400px;
 	height: 700px;
@@ -20,15 +21,16 @@ body{
 	to { 
 		background-color: darkblue;
 	}
-
 }
+
 .landscape img{
 	width: 100%;
 	position: absolute;
 	left: 0;
 	bottom: 0;
-
 }
+
+/* Flasher + change color animation */
 .flasher{
 	width: 30px;
 	height: 30px;
@@ -45,7 +47,9 @@ body{
 	to {
 		background-color: red;
 	}
-  }
+}
+
+/* Car + move and rotate animation */
 .car{
 	position: absolute;
 	left: 0;
@@ -54,6 +58,25 @@ body{
 	transform: scaleX(-1) translate(0%,0);
 	animation: carMove 14s infinite;
 }
+@keyframes carMove {
+	49% {
+		transform: scaleX(-1);
+		left: 78%;
+		bottom: 15px;
+	}
+	50% {
+		transform: scaleX(1);
+		left: 78%;
+		bottom: 90px;
+	}
+	80% {
+		transform: scaleX(1);
+		left: 3%;
+		bottom: 90px;
+  }
+}
+
+/* Wheels + rotation animation */
 .wheels{
 	width: 257px;
 	margin-top: -46px;
@@ -70,27 +93,10 @@ body{
 	to {
 		transform: rotate(0deg);
 	}
-  }
- 
-  @keyframes carMove {
-	
-	49% {
-		transform: scaleX(-1);
-		left: 78%;
-		bottom: 15px;
-	}
-	50% {
-		transform: scaleX(1);
-		left: 78%;
-		bottom: 90px;
-	}
-	80% {
-		transform: scaleX(1);
-		left: 3%;
-		bottom: 90px;
-  }
-} 
-  .light{
+}
+
+/* Light + turn the light on animation */
+.light{
 	width: 40px;
 	height: 100px;
 	position: absolute;
@@ -100,23 +106,19 @@ body{
 	color: transparent;
 	animation: turn 14s infinite;
 }
-  .light svg{
+.light svg{
 	fill: currentColor;
 }
-  @keyframes turn {
-	0%{
-
-	}
+@keyframes turn {
 	49%{
 		color: transparent;
 	}
 	50%{
 		color: lightyellow;
-	}
-	100%{
-
-	}
 }
+}
+
+/* Sun + moving sun animation */
 .sun{
 	width: 70px;
 	height: 70px;
@@ -126,7 +128,6 @@ body{
 	left: 10%;
 	top: 70%;
 	animation: moveSun 14s infinite;
-	
 }
 @keyframes moveSun {
 	24%{
