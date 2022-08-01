@@ -144,6 +144,6 @@ body{
 		top: 60%;
 	}
 	100%{
-		display: none;
+		visibility: hidden;
 	}
 }
