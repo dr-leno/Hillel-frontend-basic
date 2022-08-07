@@ -1,0 +1,17 @@
+// COMPONENTS
+@use './components/main';
+@use './components/mixins';
+@use './components/typography';
+@use './components/buttons';
+@use './components/animation';
+
+
+
+// SECTIONS
+@use './sections/navbar';
+@use './sections/intro-section';
+@use './sections/work-process';
+@use './sections/featured-work';
+@use './sections/services';
+@use './sections/team';
+@use './sections/client-said';

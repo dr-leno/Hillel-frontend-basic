@@ -1,0 +1,42 @@
+
+@use './mixins' as m;
+@use './variables' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+$font: 'Open Sans', sans-serif;
+
+
+body{
+    font-family: $font;
+}
+
+span{
+    color: v.$orange;
+}
+h1{
+    @include m.text(50px, 46px, v.$gray);
+    
+}
+.form-title{
+    @include m.text(20px, 25px, v.$gray);
+}
+.section-title{
+    @include m.text(50px, 46px, v.$black);
+}
+.work-process{
+    .btn{
+        @include m.text(16px, 25px, v.$black);
+    }
+}
+.team{
+    .front-caption{
+        .description{
+            @include m.text(17px, 20px, v.$black);
+        }
+    }
+    .back-caption{
+        .description{
+            @include m.text(17px, 20px, v.$orange);
+        }
+    }
+}

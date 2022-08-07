@@ -1,0 +1,9 @@
+@use '../components/variables' as v;
+.navbar{
+    padding: 80px 0;
+    background-color: v.$bg-gray;
+    &-toggler {
+        padding: 0;
+        border: none;
+    }
+}

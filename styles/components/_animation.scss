@@ -1,0 +1,54 @@
+@use '../components/variables' as v;
+.work-process{
+	.card-inner{
+	&:hover{
+		box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+}
+
+}
+.btn-light{
+	&:hover{
+		box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+		background-color: v.$lightgray;
+	}
+}
+
+.services{
+	.icon{
+		&:hover{
+			box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+			background-color: v.$bg-white;
+		}
+	}
+	h3{
+		&::after{
+			transition: 1s;
+		}
+		&:hover::after{
+			width: 50%;
+		}
+	}
+}
+
+.team {
+	.flip-card-inner{
+		transition: transform 1s;
+		.flip-card-back {
+			visibility: hidden;
+		}
+	}
+	.flip-team-card:hover {
+		.flip-card-inner {
+		transform: rotateY(180deg);
+		.flip-card-front {
+			visibility: hidden;
+		}
+		.flip-card-back {
+			visibility: visible;
+			transform: rotateY(180deg);
+		}
+	  }
+	}	
+}
+

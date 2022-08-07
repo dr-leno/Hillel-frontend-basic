@@ -1,0 +1,22 @@
+@use '../components/variables' as v;
+
+.services{
+	.icon{
+	width: 105px;
+	height: 93px;
+	background-color: v.$lightgray;
+	img{
+		width: 62px;
+		height: 62px;
+	}
+}
+h3::after{
+	content: '';
+	width: 10%;
+	height: 3px;
+	background-color: v.$orange2;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+}
+}

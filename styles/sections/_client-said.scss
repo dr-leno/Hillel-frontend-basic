@@ -1,0 +1,23 @@
+@use '../components/variables' as v;
+
+.carousel-item{
+    .carousel{
+        .card{
+        padding: 95px 50px 37px;
+    // .avatar {
+    //     width: 75px;
+    //     height: 75px;
+    //     background-color: v.$bg-white;
+    //     border: 1px solid #000;
+    //     z-index: 10;
+    // }
+} 
+    }
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: v.$bg-white;
+    border: 1px solid #000;
+    z-index: 10;
+}

@@ -1,0 +1,21 @@
+@use '../components/variables' as v;
+
+.work-process{
+    .card-inner{
+       height: 264px;
+    }
+       .bg-lightblue {
+        background-color: v.$bg-lightblue;
+    }
+    .bg-violet {
+        background-color: v.$bg-violet;
+    }
+    .bg-blue {
+        background-color: v.$bg-blue;
+    }
+    .bg-red {
+        background-color: v.$bg-red;
+    }
+    
+    }
+

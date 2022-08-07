@@ -1,0 +1,17 @@
+@use '../components/variables' as v;
+
+.intro-section{
+    background-color: v.$bg-gray;
+    .form{
+        margin-top: 85px;
+        form {
+            padding: 15px 39px 0; 
+           .form-control {
+                border: none;
+                border-bottom: 1px solid #000;
+                border-radius: 0;
+                background-color: transparent;
+            }
+        }  
+    }
+}

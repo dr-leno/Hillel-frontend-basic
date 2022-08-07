@@ -1,0 +1,9 @@
+@use '../components/variables' as v;
+
+.featured-work{
+	background-color: v.$bg-gray;
+}
+.block{
+    height: 359px;
+    background-color: v.$orange2;
+}

@@ -1,0 +1,40 @@
+@use '../components/variables' as v;
+
+.team{
+    background-color: v.$bg-gray;
+    .flip-team-card{ 
+        height: 445px;
+       .flip-card-inner{
+        width: 100%;
+        height: 100%;
+        
+    .flip-card-front{
+        height: 100%;
+        width: 100%;
+        background-color: v.$orange2;
+        .front-caption{
+            width: 263px;
+            background-color: v.$bg-white;
+        }
+    }
+    .flip-card-back{
+        height: 100%;
+        width: 100%;
+        background-color: v.$bg-lightorange;
+         .skills{
+        width: 160px; 
+        .progress{
+            height: 4px;
+            background-color: v.$gray;
+            &-bar{
+            background-color: v.$orange2;
+             } 
+        }
+        }
+    }
+    }
+    } 
+}
+
+    
+    

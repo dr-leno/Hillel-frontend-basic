@@ -1,0 +1,20 @@
+@use '../components/variables' as v;
+
+.intro-section{
+    .form{
+    .btn-primary{
+    padding: 18px 30px 18px 45px;
+    border: none;
+    background-color: v.$orange2;
+    svg{
+        margin-left: 8px;
+    }
+    }
+}
+}
+
+    .btn-light{
+        width: 230px;
+        background-color: v.$bg-white;
+    }
+
