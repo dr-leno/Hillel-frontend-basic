@@ -40,3 +40,9 @@ h1{
         }
     }
 }
+
+footer{
+    .footer-text{
+        @include m.text(17px, 20px, v.$gray);
+    }
+}

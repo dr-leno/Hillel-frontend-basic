@@ -19,6 +19,10 @@
   margin-top: 110px;
 }
 
+.section-padding {
+  padding: 130px 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -60,6 +64,12 @@ h1 {
   font-size: 17px;
   line-height: 20px;
   color: #fc6744;
+}
+
+footer .footer-text {
+  font-size: 17px;
+  line-height: 20px;
+  color: #6b6b6b;
 }
 
 .intro-section .form .btn-primary {
@@ -124,6 +134,10 @@ h1 {
 }
 .carousel .carousel-control-next:hover .carousel-control-next-icon {
   filter: invert(0);
+}
+
+footer .social:hover {
+  background-color: #fc6744;
 }
 
 .navbar {
@@ -259,4 +273,13 @@ h1 {
 }
 .carousel-control-next .carousel-control-next-icon {
   height: 20px;
+}
+
+.social {
+  width: 55px;
+  height: 55px;
+  background-color: #d3d3d3;
+}
+.social svg {
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

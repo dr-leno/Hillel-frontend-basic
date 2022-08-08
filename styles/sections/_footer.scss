@@ -1,0 +1,11 @@
+@use '../components/variables' as v;
+
+.social{
+    width: 55px;
+    height: 55px;
+    background-color: v.$footergray;
+    svg{
+        color: v.$bg-white;
+    }
+    
+}
