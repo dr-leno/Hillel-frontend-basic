@@ -5,3 +5,230 @@
 	list-style-type: none;
 	text-decoration: none;
 }
+.container{
+	width: 1000px;
+	background-color: #e7e7f1;
+	margin: 0 auto;
+	padding: 30px;
+	
+}
+.wrap{
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+}
+.relative {
+	position: relative;
+}
+.big{
+	width: 175px;
+	padding: 10px;
+	border-radius: 45px;
+	font-size: 20px;
+}
+.btn{
+	border: none;
+	background-color: #e7e7f1;
+	color: rgb(0, 0, 0, 0.6);
+	box-shadow: 2px 3px 3px rgb(0, 0, 0, 0.2), -2px -3px 3px #fff;
+	cursor: pointer;
+	margin-right: 15px;
+}
+.btn:active{
+	border: 1px solid rgb(0, 0, 0, 0.2);
+	box-shadow: none;
+}
+.small{
+	width: 45px;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 30px;
+}
+.arrow {
+	display: block;
+	width: 29px;
+	height: 24px;
+}
+.arrow.right{
+	background: url('../img/shevron-right.png') no-repeat right;
+	
+}
+.arrow.left{
+	background: url('../img/shevron-left.png') no-repeat right;
+}
+.text-type{
+	border: none;
+	background-color: #e7e7f1;
+	color: rgb(0, 0, 0, 0.6);
+	box-shadow: -2px -3px 3px #fff inset, 2px 3px 3px rgb(0, 0, 0, 0.3) inset;
+	margin-right: 15px;
+}
+.text-type:focus{
+	outline: none;
+}
+.radio-btn{
+	appearance: none;
+	width: 45px;
+	height: 45px;
+	margin-right: 15px;
+	background-color: #e7e7f1;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 2px 3px 3px rgb(0, 0, 0, 0.2), -2px -3px 3px #fff;
+	cursor: pointer;
+}
+.radio-btn::before {
+	content: '';
+	position: absolute;
+	top: 25%;
+	left: 25%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgb(0, 0, 0, 0.6);
+    border-radius: 50%;
+}
+.radio-btn:checked {
+	width: 40px;
+	height: 40px;
+	box-shadow: -3px 2px 3px rgb(0 0 0 / 20%), 2px -2px 3px #fff;
+	cursor: pointer;
+}
+.radio-btn:checked::before {
+	content: '';
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	height: 20px;
+    width: 20px;
+	border: none;
+	background-color: rgb(0, 0, 0, 0.6);
+}
+.label-sm::after{
+    content: '';
+	width: 24px;
+	height: 24px;
+    background: url(../img/share.png) no-repeat center;
+    position:absolute;
+    top:0px;
+    left: 75px;
+	z-index: 100;
+}
+.small-btn{
+	display: flex;
+	width: 125px;
+	padding: 10px;
+	border-radius: 45px;
+	font-size: 18px;
+	justify-content: flex-start;
+	align-items: center;
+}
+.arrow.up{
+	background: url('../img/shevron-up.png') no-repeat right;
+}
+.arrow.down{
+	background: url('../img/shevron-down.png') no-repeat right;
+}
+.dropdown-btn{
+	display: flex;
+	width: 175px;
+	padding: 10px;
+	border-radius: 45px;
+	font-size: 20px;
+	justify-content: flex-start;
+}
+.dropdown::after{
+    content: '';
+	width: 24px;
+	height: 24px;
+    background: url(../img/shevron-down.png) no-repeat center;
+    position:absolute;
+    top:0px;
+    left: 130px;
+	z-index: 100;
+}
+.location::after{
+	content: '';
+	width: 24px;
+	height: 24px;
+    background: url(../img/location.png) no-repeat center;
+    position:absolute;
+    top:0px;
+    left: 75px;
+	z-index: 100;
+}
+.add-user-btn{
+	display: flex;
+	width: 175px;
+	padding: 10px;
+	border-radius: 45px;
+	font-size: 20px;
+	justify-content: flex-end;
+}
+.add-user::before{
+	content: '';
+	width: 24px;
+	height: 24px;
+    background: url(../img/add-user.png) no-repeat center;
+    position:absolute;
+    top:0px;
+    right: 130px;
+	z-index: 100;
+}
+.checkbox{
+	appearance: none;
+	margin-right: 15px;
+	width: 90px;
+	height: 40px;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 2px 3px 3px rgb(0, 0, 0, 0.2), -2px -3px 3px #fff;
+	cursor: pointer;
+}
+.checkbox::before{
+	content: '';
+	width: 35px;
+	height: 35px;
+	border: none;
+	border-radius: 50%;
+    background-color: #fff;
+	box-shadow: 2px 3px 3px rgb(0, 0, 0, 0.2), -2px -3px 3px #fff;
+    position:absolute;
+    top: 2px;
+    right: 50px;
+	z-index: 100;
+}
+.checkbox:checked{
+	background-color: #4d45c4;
+	box-shadow: none;
+}
+.checkbox:checked::before{
+	top: 2px;
+    right: 3px;
+}
+.search{
+	width: 300px;
+	padding: 10px 20px;
+	border-radius: 45px;
+
+}
+.search::before{
+	content: '';
+	width: 24px;
+	height: 24px;
+    background: url(../img/search.png) no-repeat center;
+	background-size: 85%;
+    position:absolute;
+    top: 30%;
+    left: 5px;
+	z-index: 100;
+}
+.search-input{
+	padding: 10px;
+	border-radius: 45px;
+	border: none;
+	background-color: #e7e7f1;
+	font-size: 18px;
+}
+.search-input:focus{
+    outline: none;
+}

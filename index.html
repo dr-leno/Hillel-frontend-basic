@@ -5,9 +5,47 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
-	<title>Document</title>
+	<title>Form visualization</title>
 </head>
 <body>
+	<div class="container">
+		<div class="wrap">
+		<button class="btn big">Button</button>
+		<button class="btn small"><span class="arrow left"></span></button>
+		<button class="btn small"><span class="arrow right"></span></button>
+		</div>
+		<div class="wrap">
+			<input class="big text-type" type="text" placeholder="Input">
+			<label for="radio-id" name="radio" class="radio relative">
+				<input id="radio-id" class="radio-btn relative small" type="radio" name="radio">
+			</label>
+			<label for="radio-id" name="radio" class="radio relative">
+				<input id="radio-id" class="radio-btn relative small" type="radio" name="radio" checked>
+			</label>
+		</div>
+		<div class="wrap">
+			<button class="btn small-btn"><span class="label-sm relative">Share</span></button>
+			<button class="btn dropdown-btn"><span class="dropdown relative">Dropdown</span></button>
+			<button class="btn small"><span class="arrow up"></span></button>
+			<button class="btn small"><span class="arrow down"></span></button>
+		</div>
+		<div class="wrap">
+			<button class="btn small-btn"><span class="location relative">Label</span></button>
+			<button class="btn add-user-btn"><span class="add-user relative">Add User</span></button>
+			<label for="checkbox" class="">
+				<input id="checkbox" class="checkbox relative" type="checkbox" name="checkbox" checked>
+			</label>
+			<label for="checkbox" class="">
+				<input id="checkbox" class="checkbox relative" type="checkbox" name="checkbox-checked">
+			</label>
+		</div>
+		<div class="wrap">
+			<div class="text-type search relative">
+				<input type="search" class="search-input" placeholder="Search for ...">
+			</div>
+		</div>
+	</div>
+
 	
 </body>
 </html>
