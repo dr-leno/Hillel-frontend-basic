@@ -10,7 +10,6 @@
 	background-color: #e7e7f1;
 	margin: 0 auto;
 	padding: 30px;
-	
 }
 .wrap{
 	margin: 20px;
@@ -20,24 +19,27 @@
 .relative {
 	position: relative;
 }
-.big{
-	width: 175px;
-	padding: 10px;
-	border-radius: 45px;
-	font-size: 20px;
+.shadowed{
+	box-shadow: 2px 3px 3px rgb(0, 0, 0, 0.2), -2px -3px 3px #fff;
+	cursor: pointer;
 }
 .btn{
 	border: none;
 	background-color: #e7e7f1;
 	color: rgb(0, 0, 0, 0.6);
-	box-shadow: 2px 3px 3px rgb(0, 0, 0, 0.2), -2px -3px 3px #fff;
-	cursor: pointer;
 	margin-right: 15px;
 }
 .btn:active{
 	border: 1px solid rgb(0, 0, 0, 0.2);
 	box-shadow: none;
 }
+.big{
+	width: 175px;
+	padding: 10px;
+	border-radius: 45px;
+	font-size: 20px;
+}
+
 .small{
 	width: 45px;
 	padding: 5px;
@@ -187,13 +189,13 @@
 .checkbox::before{
 	content: '';
 	width: 35px;
-	height: 35px;
+	height: 33px;
 	border: none;
 	border-radius: 50%;
     background-color: #fff;
 	box-shadow: 2px 3px 3px rgb(0, 0, 0, 0.2), -2px -3px 3px #fff;
     position:absolute;
-    top: 2px;
+    top: 5px;
     right: 50px;
 	z-index: 100;
 }
@@ -202,14 +204,13 @@
 	box-shadow: none;
 }
 .checkbox:checked::before{
-	top: 2px;
+	top: 5px;
     right: 3px;
 }
 .search{
 	width: 300px;
 	padding: 10px 20px;
 	border-radius: 45px;
-
 }
 .search::before{
 	content: '';
